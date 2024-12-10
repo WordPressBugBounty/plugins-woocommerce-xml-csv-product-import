@@ -143,8 +143,13 @@
 								<label style="width: auto; margin: 0 !important;" for="variable_sku_add_parent"><?php _e("Add value to the parent SKU",PMWI_Plugin::TEXT_DOMAIN); ?></label>
 								<a href="#help" class="wpallimport-help" title="<?php _e('Enable this checkbox to combine SKU from parent and variation products.', PMWI_Plugin::TEXT_DOMAIN) ?>" style="margin-left: 5px; top:0;">?</a>
 							</span>
-						</p>						
-						<p class="form-field" style="margin-top: 5px;">
+						</p>
+                        <p class="form-field">
+                            <label style="width:150px;"><?php _e('GTIN, UPC, EAN or ISBN',PMWI_Plugin::TEXT_DOMAIN);?></label>
+                            <a href="#help" class="wpallimport-help" title="<?php _e('WooCommerce only allows numbers and hyphens in this field.', PMWI_Plugin::TEXT_DOMAIN) ?>" style="position:relative; top:0px;">?</a>
+                            <input type="text" value="<?php echo esc_attr($post['variable_global_unique_id']) ?>" style="" name="variable_global_unique_id" class="short">
+                        </p>
+                        <p class="form-field" style="margin-top: 5px;">
 							<label style="width:150px;"><?php _e('Image',PMWI_Plugin::TEXT_DOMAIN);?></label>
 							<input type="text" value="<?php echo esc_attr($post['variable_image']) ?>" style="" name="variable_image" class="short">							
 							<span class="use_parent align">

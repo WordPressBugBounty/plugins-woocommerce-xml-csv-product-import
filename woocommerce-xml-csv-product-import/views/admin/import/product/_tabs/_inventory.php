@@ -9,6 +9,21 @@
         <p><?php _e('If you already own it, remove the free edition and install the Pro edition.', 'wp_all_import_plugin'); ?></p>
     </div>
     <?php endif; ?>
+    <div class="options_group">
+        <p class="form-field">
+            <label><?php _e("SKU", PMWI_Plugin::TEXT_DOMAIN); ?></label>
+            <input type="text" class="short" name="single_product_sku" style="" value="<?php echo esc_attr($post['single_product_sku']) ?>"/>
+        </p>
+    </div>
+	<?php if (defined('WC_VERSION') && version_compare(WC_VERSION, '9.2', '>=')):?>
+        <div class="options_group">
+            <p class="form-field">
+                <label><?php _e("GTIN, UPC, EAN or ISBN", PMWI_Plugin::TEXT_DOMAIN); ?></label>
+                <input type="text" class="short" name="single_product_global_unique_id" style="" value="<?php echo esc_attr($post['single_product_global_unique_id'] ?? '') ?>"/>
+                <a href="#help" class="wpallimport-help" title="<?php _e('WooCommerce only allows numbers and hyphens in this field.', PMWI_Plugin::TEXT_DOMAIN) ?>" style="position:relative; top:2px;">?</a>
+            </p>
+        </div>
+	<?php endif;?>
 	<div class="options_group show_if_simple show_if_variable">
 		<p class="form-field"><?php _e("Manage stock?", PMWI_Plugin::TEXT_DOMAIN); ?></p>
 		<p class="form-field wpallimport-radio-field">

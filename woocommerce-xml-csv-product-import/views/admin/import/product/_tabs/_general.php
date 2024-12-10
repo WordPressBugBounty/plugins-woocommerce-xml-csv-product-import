@@ -9,12 +9,6 @@
             <p><?php _e('If you already own it, remove the free edition and install the Pro edition.', 'wp_all_import_plugin'); ?></p>
         </div>
     <?php endif; ?>
-	<div class="options_group">
-		<p class="form-field">
-			<label><?php _e("SKU", PMWI_Plugin::TEXT_DOMAIN); ?></label>
-			<input type="text" class="short" name="single_product_sku" style="" value="<?php echo esc_attr($post['single_product_sku']) ?>"/>			
-		</p>
-	</div>
     <?php if (class_exists('WC_Subscriptions')): ?>
         <?php include('subscriptions/_simple_subscription.php'); ?>
     <?php endif; ?>

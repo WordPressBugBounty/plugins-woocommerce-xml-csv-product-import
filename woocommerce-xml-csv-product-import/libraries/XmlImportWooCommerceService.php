@@ -294,6 +294,13 @@ final class XmlImportWooCommerceService {
                         update_post_meta($firstVariationID, $customFieldName, maybe_unserialize($parentMeta[$customFieldName][0]));
                     }
                 }
+
+				// Sync specific fields even if not configured in the import explicitly.
+	            $specific_fields = ['_global_unique_id'];
+
+				foreach ($specific_fields as $specific_field) {
+					!empty(($parentMeta[$specific_field][0] ?? null)) && update_post_meta($firstVariationID, $specific_field, maybe_unserialize($parentMeta[$specific_field][0]));
+				}
             }
             $sync_parent_acf_with_first_variation = apply_filters('wp_all_import_sync_parent_acf_with_first_variation', true);
             if ($sync_parent_acf_with_first_variation) {

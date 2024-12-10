@@ -1,49 +1,49 @@
-=== Import Products from any XML or CSV to WooCommerce ===
+=== Import Products from any XML, CSV or Excel to WooCommerce ===
 Contributors: soflyy, wpallimport
 Requires at least: 4.1
-Tested up to: 6.6
-Stable tag: 1.5.3
+Tested up to: 6.7
+Stable tag: 1.5.4
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: woocommerce xml import, woocommerce csv import, woocommerce, import, xml, csv, wp all import, csv import, import csv, xml import, import xml, woocommerce csv importer, woocommerce xml importer, csv importer, csv import suite
 
-Easily import products from any XML or CSV file to WooCommerce with the WooCommerce add-on for WP All Import.
+Easily import products from any XML, CSV or Excel file to WooCommerce with the WooCommerce add-on for WP All Import.
 
 == Description ==
 
 *“I've been doing eCommerce sites for almost a decade. The combination of WP All Import and WooCommerce is a game changer! I can now get clients into eCommerce sites that could never afford the time/energy or money it took to administrate a site. It has opened up a whole new client base for me.”*
 **Mike Tidmore** -Founder, Successful Online Stores
 
-The WooCommerce add-on for [WP All Import](http://wordpress.org/plugins/wp-all-import/) makes it easy to bulk import your products to WooCommerce in less than 10 minutes.
+Whether you're working with XML, CSV, Google Sheets, or Excel files, the WooCommerce add-on for [WP All Import](http://wordpress.org/plugins/wp-all-import/) makes it easy to bulk import your products to WooCommerce in less than 10 minutes.
 
-The left side of the plugin looks just like WooCommerce, and the right side displays a product from your XML/CSV file.
+The left side of the plugin looks just like WooCommerce, and the right side displays product details in a table from your XML/CSV/ Excel file.
 
-**Drag & drop the data from your XML or CSV into the WooCommerce fields to import it.**
+**Drag & drop the data from your XML, CSV, or Excel into the WooCommerce fields to import it.**
 
 The importer is so intuitive it is almost like manually adding a product in WooCommerce.
 
-WooCommerce CSV imports? WooCommerce XML imports? They are EASY with WP All Import.
+WooCommerce CSV imports? WooCommerce XML imports? WooCommerce Excel Import? They are EASY with WP All Import.
 
 Here's why you should use the WooCommerce add-on for WP All Import:
 
  - Supports files in any format and structure. There are no requirements that the data in your file be organized in a certain way. WooCommerce CSV imports are easy, no matter the structure of your file. WooCommerce XML imports are flexible and work with any XML file.
  - Supports files of practically unlimited size by automatically splitting them into chunks. Import 200Mb+ product catalogs with ease, even on shared hosting.
 
-= WooCommerce Add-On Professional Edition =
+= WooCommerce Add-On Pro =
 [youtube http://www.youtube.com/watch?v=7kCmESmKGro]
 
 The Pro edition of *WP All Import + the WooCommerce add-on* is a paid upgrade that includes premium support and adds the following features:
 
-* [In-depth support for Variable products](http://www.wpallimport.com/documentation/woocommerce/variable-products/?utm_source=import-wooco-products-addon-free&utm_medium=readme&utm_campaign=import-variable-wooco-products) - example CSV files, ability to import variations from properly formatted XML, and much more.
+* [In-depth support for Variable products](http://www.wpallimport.com/documentation/woocommerce/variable-products/?utm_source=import-wooco-products-addon-free&utm_medium=readme&utm_campaign=import-variable-wooco-products) - example CSV and Excel files, ability to import variations from properly formatted XML, and much more.
 
 * Import External/Affiliate products
 
 * Import Grouped products
 
-* Import files from a URL - Download and import files from external websites, even if they are password protected with HTTP authentication.
+* Import files from a URL - Download and import WooCommerce data from Google Sheets and external websites, even if they are password protected with HTTP authentication.
 
-* Cron Job/Recurring Imports - WP All Import pro can check periodically check a file for updates, and add, edit, delete, and update the stock status of the imported products accordingly.
+* Cron Job/Recurring Imports - WP All Import Pro can periodically check a file for updates, and add, edit, delete, and update the stock status of the imported products accordingly.
 
 * Execution of Custom PHP Functions on data, i.e. use something like [my_function({xpath/to/a/field[1]})] in your template, to pass the value of {xpath/to/a/field[1]} to my_function and use whatever it returns.
 
@@ -54,7 +54,8 @@ The Pro edition of *WP All Import + the WooCommerce add-on* is a paid upgrade th
 You need the WooCommerce add-on if you need to:
 
 *   Import XML to WooCommerce
-*   Import CSV to WooCommerce
+*	Import CSV/Excel to WooCommerce
+*   Import Google Sheets to WooCommerce
 *   Are frustrated with the limitations of the official WooThemes Product CSV Import Suite
 
 = WooCommerce CSV Imports =
@@ -63,7 +64,13 @@ Of course, XML files can have complex structures, but for CSV files, you can eas
 
 When importing CSV files, you should use UTF-8 encoding (which is very standard) if you are having any trouble with CSV imports containing special characters. But other than that, there are no special requirements.
 
-This importer is the best option for WooCommerce CSV import tasks - our importer is extremely flexible when doing CSV imports because you don't need to edit your CSV files to import them to WooCommerce. WP All Import can import ANY CSV file to WooCommerce. You don't need to layout your data in a specific way, and you don't need your CSV to have specific column names. WP All Import's drag & drop interface provides you with a visual way to map the columns in your CSV file to the appropriate fields in WooCommerce.
+This importer is the best option for WooCommerce CSV import tasks – our importer is extremely flexible when doing CSV imports because you don't need to edit your CSV files to import them to WooCommerce. WP All Import can import ANY CSV file to WooCommerce. You don't need to layout your data in a specific way, and you don't need your CSV to have specific column names. WP All Import's drag & drop interface provides you with a visual way to map the columns in your CSV file to the appropriate fields in WooCommerce.
+
+= WooCommerce Excel Import / Google Sheets Import =
+
+Don't want to convert your Excel or Google Sheets data to CSV? WP All Import also works as a Google Sheets and Excel importer for WooCommerce. Simply upload your Excel file as you would for CSV and WP All Import will automatically detect the columns in your file.
+
+For Google Sheets, use the 'Download a file' option and paste your sheet's public URL to import data to WooCommerce.
 
 = Related Plugins =
 [Export any WordPress data to XML/CSV](https://wordpress.org/plugins/wp-all-export/)
@@ -81,6 +88,10 @@ This importer is the best option for WooCommerce CSV import tasks - our importer
 [How to Import Product Categories, Tags, and Other Taxonomies](https://www.wpallimport.com/documentation/how-to-import-wordpress-categories-and-tags/)
 [How to Schedule Product Imports](https://www.wpallimport.com/documentation/update-import/)
 [How to Migrate WooCommerce Products](https://www.wpallimport.com/documentation/how-to-migrate-woocommerce-products/)
+
+== Support ==
+
+You can submit the [support form on our website](https://www.wpallimport.com/support/) or email us at [support@wpallimport.com](mailto:support@wpallimport.com). While we try to assist users of our free version, please note that support is not guaranteed and will depend on our capacity. For premium support, purchase [WP All Import Pro](http://www.wpallimport.com/woocommerce-product-import/?utm_source=import-wooco-products-addon-free&utm_medium=wp-plugins-page&utm_campaign=upgrade-to-pro).
 
 == Installation ==
 
@@ -133,13 +144,17 @@ Yes. You can import any standard WooCommerce product type, including simple prod
 
 = How do I import WooCommerce products from a CSV or Excel file? =
 
-To import WooCommerce products from a CSV or Excel file, just specify the source file. WP All Import will automatically recognize the file type and adjust its interface accordingly.
+To import product data from a CSV or Excel file to WooCommerce, just specify it as the source file. WP All Import will automatically recognize the file type and adjust its interface accordingly.
 
 = How do I import WooCommerce products from an XML file? =
 
 To import WooCommerce products from an XML file, just upload the file. Our software will automatically identify the XML nodes and will let you import from any XML layout regardless of its complexity.
 
-= How Do I Import a Product Feed into WooCommerce? =
+= How do I import WooCommerce products from Google Sheets? =
+
+To import product data from Google Sheets to WooCommerce, just specify the file URL in the ‘Download a file’ option. WP All Import will automatically download data from the file and display it in a table for mapping.
+
+= How do I import a product feed into WooCommerce? =
 
 A product feed is usually organized around a URL or FTP/SFTP import source. Our plugin will handle either. Just select Download a File › From URL or Download a File › From FTP/SFTP and provide the information required by the interface.
 
@@ -156,6 +171,9 @@ A product feed is usually organized around a URL or FTP/SFTP import source. Our 
 1. The WooCommerce add-on.
 
 == Changelog ==
+
+= 1.5.4 =
+* improvement: add 'GTIN, UPC, EAN or ISBN' field
 
 = 1.5.3 =
 * bug fix: don't block use of HPOS
@@ -339,9 +357,3 @@ A product feed is usually organized around a URL or FTP/SFTP import source. Our 
 
 = 0.9 =
 * Initial release on WP.org.
-
-== Support ==
-
-Support for the free version of WP All Import is handled through the WordPress.org community forums.
-
-Support is not guaranteed and is based on ability. For premium support over email, [purchase WP All Import and the WooCommerce add-on.](https://www.wpallimport.com/checkout/?edd_action=add_to_cart&download_id=5839961&edd_options%5Bprice_id%5D=1)

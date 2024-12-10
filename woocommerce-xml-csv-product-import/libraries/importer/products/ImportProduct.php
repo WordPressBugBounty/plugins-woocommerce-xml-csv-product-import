@@ -211,6 +211,7 @@ abstract class ImportProduct extends ImportProductBase {
      */
     public function prepareInventoryProperties() {
         $this->prepareSKU();
+		$this->setProperty('global_unique_id', wc_clean( trim( stripslashes( $this->getValue('product_global_unique_id')))));
         $this->setProperty('manage_stock', $this->getValue('product_manage_stock') == 'yes');
         $backorders = $this->getValue('product_allow_backorders');
         $this->setProperty('backorders', $backorders != '' ? wc_clean($backorders) : null);

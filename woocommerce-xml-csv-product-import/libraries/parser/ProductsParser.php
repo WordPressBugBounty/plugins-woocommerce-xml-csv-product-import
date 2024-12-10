@@ -62,6 +62,7 @@ class ProductsParser extends ProductsParserBase  {
             ),
             'parseOptionType_3' => array(
                 'product_sku',
+	            'product_global_unique_id',
                 'product_variation_description',
                 'product_url',
                 'product_button_text',
