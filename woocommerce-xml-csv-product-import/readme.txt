@@ -1,12 +1,12 @@
-=== Import Products from any XML, CSV or Excel to WooCommerce ===
+=== Product Import for WooCommerce - Import Products CSV - Import Products With Images ===
 Contributors: soflyy, wpallimport
 Requires at least: 4.1
-Tested up to: 6.7
-Stable tag: 1.5.4
+Tested up to: 6.8
+Stable tag: 1.5.5
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: woocommerce xml import, woocommerce csv import, woocommerce, import, xml, csv, wp all import, csv import, import csv, xml import, import xml, woocommerce csv importer, woocommerce xml importer, csv importer, csv import suite
+Tags: product import, import products, woocommerce product import, import woocommerce products, CSV import
 
 Easily import products from any XML, CSV or Excel file to WooCommerce with the WooCommerce add-on for WP All Import.
 
@@ -171,6 +171,9 @@ A product feed is usually organized around a URL or FTP/SFTP import source. Our 
 1. The WooCommerce add-on.
 
 == Changelog ==
+
+= 1.5.5 =
+* improvement: UI updates
 
 = 1.5.4 =
 * improvement: add 'GTIN, UPC, EAN or ISBN' field
